@@ -1,37 +1,10 @@
 'use server';
 import nodemailer from 'nodemailer';
-import { render } from '@react-email/render';
 import { revalidatePath } from 'next/cache';
 import { FieldValues } from 'react-hook-form';
-import { EmailTemplate } from '@/components/custom/contact/EmailTemplate';
-import { EmailTemplateClient } from '@/components/custom/contact/EmailTemplateClient';
 
 export async function sendEmail(formData: FieldValues) {
   const { email, fullName, message, phone } = formData;
-
-  const html = render(
-    <EmailTemplate
-      email={email}
-      fullName={fullName}
-      message={message}
-      phoneNumber={phone}
-    />,
-    {
-      pretty: true,
-    }
-  );
-
-  const htmlClient = render(
-    <EmailTemplateClient
-      email={email}
-      fullName={fullName}
-      message={message}
-      phoneNumber={phone}
-    />,
-    {
-      pretty: true,
-    }
-  );
 
   const transport = nodemailer.createTransport({
     pool: true,
@@ -51,7 +24,12 @@ export async function sendEmail(formData: FieldValues) {
     },
     to: process.env.MOCCO_ADMIN_EMAIL!,
     subject: `Message from ${fullName} (${email})`,
-    html: html,
+    html: `
+    <p>Message: ${message}</p>
+    <p>Name: ${fullName}</p>
+    <p>Phone: ${phone}</p>
+    <p>Email: ${email}</p>
+    `,
   };
 
   const clientMailOptions = {
@@ -61,7 +39,15 @@ export async function sendEmail(formData: FieldValues) {
     },
     to: email,
     subject: `Message from Mocco Tech`,
-    html: htmlClient,
+    html: `
+    <p>Dear ${fullName}, thanks a lot for your request!
+    <br /> Our team will contact you ASAP and answer all your questions.</p>
+    <b>Your request:</b>
+    <p>Your message: ${message}</p>
+    <p>Your phone: ${phone}</p>
+    <p>Your email: ${email}</p>
+    <br/>
+    <p>This is an automated email, please do not reply to it.</p>`,
   };
 
   try {
