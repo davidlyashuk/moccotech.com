@@ -6,6 +6,8 @@ import Header from '@/components/custom/header/Header';
 import Footer from '@/components/custom/footer/Footer';
 import { Toaster } from 'react-hot-toast';
 import NextTopLoader from 'nextjs-toploader';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const headingsFont = Montserrat_Alternates({
   subsets: ['latin'],
@@ -34,6 +36,8 @@ export default function RootLayout({
       <body
         className={`${headingsFont.variable} ${bodyFont.variable} font-body`}
       >
+        <SpeedInsights />
+        <Analytics />
         <Dialog>
           <NextTopLoader color="#6366f1" showSpinner={false} />
           <Toaster position="top-center" />
