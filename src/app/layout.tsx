@@ -18,6 +18,12 @@ const bodyFont = Montserrat({
   variable: '--font-body',
 });
 
+export const metadata = {
+  verification: {
+    google: 'bn2TNug92IE_Igk_FKJ1kXjk2Mm6OdbVFOgV1fF2OPQ',
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
