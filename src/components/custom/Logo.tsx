@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Logo() {
   return (
     <div className="w-64 sm:w-72">
-      <Link href="/">
+      <Link href="/" className="cursor-pointer">
         <Image
           src="/mocco-tech-logo.png"
           alt="Mocco Tech"

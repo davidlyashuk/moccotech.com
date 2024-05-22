@@ -5,9 +5,10 @@ import React from 'react';
 
 const menu = [
   { label: 'Projects', link: '/projects' },
+  { label: 'Blog', link: '/blog' },
+  { label: 'Services', link: '/services' },
   { label: 'Consulting', link: '/contact' },
   { label: 'Feedback', link: '/#feedback' },
-  { label: 'Services', link: '/services' },
   { label: 'About us', link: '/about' },
 ];
 

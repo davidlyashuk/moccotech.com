@@ -3,13 +3,13 @@ import ProjectsList from '@/components/custom/projects/ProjectsList';
 import { getProjects } from '@/utils/getProjects';
 
 export const metadata = {
-  title: 'Mocco Tech - our Latest Projects',
+  title: 'Mocco Tech | Our Latest Projects',
   description:
     'Take a look for few of our latest projects. We build the Online Journals, eCommerece stores, sing-page applications, mobile applications and much more',
 
   metadataBase: new URL('https://www.moccotech.com'),
   openGraph: {
-    title: `Mocco Tech - our Latest Projects`,
+    title: `Mocco Tech | Our Latest Projects`,
     description:
       'Take a look for few of our latest projects. We build the Online Journals, eCommerece stores, sing-page applications, mobile applications and much more',
     url: `https://moccotech.com/projects`,

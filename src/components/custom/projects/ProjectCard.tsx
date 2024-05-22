@@ -20,12 +20,12 @@ export default function ProjectCard({
   return (
     <Link href={`/project/${id}`}>
       <motion.div
-        className="flex flex-col gap-2 border-b pb-6 sm:border-b-0 sm:pb-0"
+        className="flex flex-col border-b pb-6 sm:border-b-0 sm:pb-0"
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-full h-64 sm:h-72 relative border-2 border-white hover:border-indigo-500 duration-300 rounded-xl">
+        <div className="w-full h-64 sm:h-72 relative border-2 border-white hover:border-indigo-500 duration-300 rounded-xl mb-2">
           <Image
             src={image}
             alt={title}
@@ -36,7 +36,9 @@ export default function ProjectCard({
             className="w-full h-full object-cover object-center rounded-lg"
           />
         </div>
-        <h3 className="font-heading text-2xl z-[5] text-gray-700">{title}</h3>
+        <h3 className="font-heading font-medium text-2xl z-[5] text-gray-700 mb-1">
+          {title}
+        </h3>
         <p className="text-md z-[5] text-gray-600 line-clamp-2">
           {shortDescription}
         </p>

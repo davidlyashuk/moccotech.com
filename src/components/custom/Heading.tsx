@@ -13,9 +13,21 @@ export default function Heading({ children, type = 'h1' }: HeadingProps) {
   if (type === 'h4')
     return <h4 className="text-xl font-heading text-slate-800">{children}</h4>;
   if (type === 'h3')
-    return <h3 className="text-xl font-heading text-slate-800">{children}</h3>;
+    return (
+      <h3 className="text-xl font-heading font-medium text-slate-800">
+        {children}
+      </h3>
+    );
   if (type === 'h2')
-    return <h2 className="text-2xl font-heading text-slate-800">{children}</h2>;
+    return (
+      <h2 className="text-2xl font-heading font-medium text-slate-800">
+        {children}
+      </h2>
+    );
   if (type === 'h1')
-    return <h1 className="text-3xl font-heading text-slate-800">{children}</h1>;
+    return (
+      <h1 className="text-2xl lg:text-3xl font-heading font-medium text-slate-800">
+        {children}
+      </h1>
+    );
 }

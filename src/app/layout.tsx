@@ -11,7 +11,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 const headingsFont = Montserrat_Alternates({
   subsets: ['latin'],
-  weight: ['600'],
+  weight: ['400', '500', '600'],
   variable: '--font-headings',
 });
 const bodyFont = Montserrat({
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${headingsFont.variable} ${bodyFont.variable} font-body`}
+        className={`${headingsFont.variable} ${bodyFont.variable} font-body selection:bg-slate-600 selection:text-slate-50`}
       >
         <SpeedInsights />
         <Analytics />
