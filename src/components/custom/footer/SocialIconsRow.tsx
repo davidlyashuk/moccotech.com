@@ -18,18 +18,8 @@ export default function SocialIconsRow() {
         />
       </Link>
 
-      <Link href="https://github.com/Mocco-Tech" target="_blank">
-        <SocialIcon
-          network="github"
-          as="div"
-          bgColor="#475569"
-          style={{ width: '2rem', height: '2rem' }}
-          className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
-        />
-      </Link>
-
       <Link
-        href="https://www.linkedin.com/company/mocco-group-oü/about/"
+        href="https://www.facebook.com/people/Mocco-Tech/61560278767932/"
         target="_blank"
       >
         <SocialIcon
@@ -41,12 +31,29 @@ export default function SocialIconsRow() {
         />
       </Link>
 
-      <Link
-        href="https://www.linkedin.com/company/mocco-group-oü/about/"
-        target="_blank"
-      >
+      <Link href="https://www.instagram.com/moccotech_com/" target="_blank">
         <SocialIcon
           network="instagram"
+          as="div"
+          bgColor="#475569"
+          style={{ width: '2rem', height: '2rem' }}
+          className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
+        />
+      </Link>
+
+      <Link href="https://pin.it/2ln6K3ZSb" target="_blank">
+        <SocialIcon
+          network="pinterest"
+          as="div"
+          bgColor="#475569"
+          style={{ width: '2rem', height: '2rem' }}
+          className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
+        />
+      </Link>
+
+      <Link href="https://github.com/Mocco-Tech" target="_blank">
+        <SocialIcon
+          network="github"
           as="div"
           bgColor="#475569"
           style={{ width: '2rem', height: '2rem' }}
