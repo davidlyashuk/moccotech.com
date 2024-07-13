@@ -1,14 +1,18 @@
 import Heading from '@/components/custom/Heading';
 import HomeBanner from '@/components/custom/home/HomeBanner';
+import PricingBlock from '@/components/custom/home/PricingBlock';
+import SubscriptionBlock from '@/components/custom/home/SubscriptionBlock';
 import ProjectsList from '@/components/custom/projects/ProjectsList';
 import ReviewsList from '@/components/custom/reviews/ReviewsList';
 import ServicesList from '@/components/custom/services/ServicesList';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { getProjects } from '@/utils/getProjects';
 import { getProjectsTitles } from '@/utils/getProjectsTitles';
 import { getReviews } from '@/utils/getReviews';
 import { getServices } from '@/utils/getServices';
 import { getTechnologies } from '@/utils/getTechnologies';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const revalidate = 0;
 
@@ -65,6 +69,9 @@ export default async function Home() {
         <Heading type="h2">What people say?</Heading>
         <ReviewsList reviews={reviews} />
       </div>
+
+      <PricingBlock />
+      <SubscriptionBlock />
     </main>
   );
 }

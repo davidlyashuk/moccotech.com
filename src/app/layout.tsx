@@ -11,12 +11,12 @@ import { Analytics } from '@vercel/analytics/react';
 
 const headingsFont = Montserrat_Alternates({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-headings',
 });
 const bodyFont = Montserrat({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-body',
 });
 
