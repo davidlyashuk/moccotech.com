@@ -27,7 +27,7 @@ export default function SubscriptionBlock() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-0">
-        <PricingItem className="rounded-xl md:border-r-0 md:rounded-l-xl">
+        <PricingItem className="rounded-xl md:border-r-0 md:rounded-r-none">
           <h4 className="mb-2 text-lg font-heading text-slate-800 font-semibold">
             Basic
           </h4>
@@ -52,7 +52,7 @@ export default function SubscriptionBlock() {
             </Button>
           </DialogTrigger>
         </PricingItem>
-        <PricingItem className="rounded-xl md:rounded-r-xl">
+        <PricingItem className="rounded-xl md:rounded-l-none">
           <h4 className="mb-2 text-lg font-heading text-slate-800 font-semibold flex justify-between items-center">
             Premium
           </h4>

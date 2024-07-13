@@ -20,7 +20,7 @@ export default function PricingBlock() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-0">
-        <PricingItem className="rounded-xl md:border-r-0 md:rounded-l-xl">
+        <PricingItem className="rounded-xl md:border-r-0 md:rounded-r-none">
           <h4 className="mb-2 text-lg font-heading text-slate-800 font-semibold">
             Basic website
           </h4>
@@ -46,7 +46,7 @@ export default function PricingBlock() {
             </Button>
           </DialogTrigger>
         </PricingItem>
-        <PricingItem className="rounded-xl md:rounded-t-xl md:-mt-5">
+        <PricingItem className="rounded-xl md:rounded-b-none md:-mt-5">
           <h4 className="mb-2 text-lg font-heading text-indigo-600 font-semibold flex justify-between items-center">
             Ecommerce website
             <span className="font-body text-sm font-medium text-indigo-600/90 bg-indigo-100/60 rounded-xl px-3 py-1">
@@ -76,7 +76,7 @@ export default function PricingBlock() {
             </Button>
           </DialogTrigger>
         </PricingItem>
-        <PricingItem className="rounded-xl md:border-l-0 md:rounded-r-xl">
+        <PricingItem className="rounded-xl md:border-l-0 md:rounded-l-none">
           <h4 className="mb-2 text-lg font-heading text-slate-800 font-semibold">
             Corporate website
           </h4>
