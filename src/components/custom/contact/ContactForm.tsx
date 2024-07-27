@@ -57,7 +57,7 @@ export default function ContactForm() {
         minLengthMessaage="Phone must be at least 3 symbols"
         minLengthValue={3}
         patternValue={phoneRegex}
-        patternMessage="Please enter a valid phone number (digits only)"
+        patternMessage="Please enter a valid phone number (only digits, not less than 7 symbols)"
         disabled={isSubmitting}
         errors={errors?.phone}
       />
