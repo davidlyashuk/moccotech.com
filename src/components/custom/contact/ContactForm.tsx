@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { FieldValues, useForm } from 'react-hook-form';
 import { sendEmail } from '@/app/actions/send-email';
 
-import { emailRegex, phoneRegex } from '@/utils/regex';
+import { emailRegex } from '@/utils/regex';
 import { Button } from '@/components/ui/button';
 import { InputField } from './InputField';
 import { TextArea } from './TextArea';
@@ -45,21 +45,6 @@ export default function ContactForm() {
         minLengthValue={3}
         disabled={isSubmitting}
         errors={errors?.fullName}
-      />
-
-      <InputField
-        id="phone"
-        type="tel"
-        register={register}
-        placeholder="Your phone"
-        requiredValue={true}
-        requiredMessage="This field is required"
-        minLengthMessaage="Phone must be at least 3 symbols"
-        minLengthValue={3}
-        patternValue={phoneRegex}
-        patternMessage="Please enter a valid phone number (only digits, not less than 7 symbols)"
-        disabled={isSubmitting}
-        errors={errors?.phone}
       />
 
       <InputField
