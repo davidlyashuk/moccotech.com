@@ -35,7 +35,7 @@ export default function PricingBlock() {
             </span>
           </h4>
           <ul className="mb-6 text-slate-500">
-            <PricingListItem> Up to 10 Pages/Templates</PricingListItem>
+            <PricingListItem>Up to 10 Pages/Templates</PricingListItem>
             <PricingListItem>Web-development</PricingListItem>
             <PricingListItem>Easy-to-Maintain & Update</PricingListItem>
             <PricingListItem>SEO optimized</PricingListItem>
@@ -54,11 +54,11 @@ export default function PricingBlock() {
             </span>
           </h4>
           <p className="mb-2 text-sm text-slate-500">
-            A multi-page website with an easy-to-use WordPress/Shopify CMS.
-            Ideal for starting an online store business.
+            A multi-page website with an easy-to-use custom built CMS. Ideal for
+            starting an online store business.
           </p>
           <h4 className="mb-4 flex items-end gap-2 text-2xl text-slate-800 font-bold font-heading">
-            $9400
+            $8400
             <span className="pb-1 text-slate-500 text-sm font-medium">
               starting from
             </span>
