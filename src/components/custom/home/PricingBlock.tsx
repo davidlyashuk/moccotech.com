@@ -1,9 +1,9 @@
-'use client';
-import { Button } from '@/components/ui/button';
-import { DialogTrigger } from '@/components/ui/dialog';
-import React from 'react';
-import PricingItem from './PricingItem';
-import PricingListItem from './PricingListItem';
+"use client";
+import { Button } from "@/components/ui/button";
+import { DialogTrigger } from "@/components/ui/dialog";
+import React from "react";
+import PricingItem from "./PricingItem";
+import PricingListItem from "./PricingListItem";
 
 export default function PricingBlock() {
   return (
@@ -29,7 +29,7 @@ export default function PricingBlock() {
             Ideal for early-stage projects.
           </p>
           <h4 className="mb-4 flex items-end gap-2 text-2xl text-slate-800 font-bold font-heading">
-            $1500
+            $4700
             <span className="pb-1 text-slate-500 text-sm font-medium">
               starting from
             </span>
@@ -41,7 +41,7 @@ export default function PricingBlock() {
             <PricingListItem>SEO optimized</PricingListItem>
           </ul>
           <DialogTrigger asChild className="w-fit">
-            <Button className="w-full rounded-lg" variant={'outline'}>
+            <Button className="w-full rounded-lg" variant={"outline"}>
               Contact
             </Button>
           </DialogTrigger>
@@ -58,7 +58,7 @@ export default function PricingBlock() {
             Ideal for starting an online store business.
           </p>
           <h4 className="mb-4 flex items-end gap-2 text-2xl text-slate-800 font-bold font-heading">
-            $2400
+            $9400
             <span className="pb-1 text-slate-500 text-sm font-medium">
               starting from
             </span>
@@ -86,7 +86,7 @@ export default function PricingBlock() {
             quickly or who need to migrate to low-code.
           </p>
           <h4 className="mb-4 flex items-end gap-2 text-2xl text-slate-800 font-bold font-heading">
-            $4900
+            $11900
             <span className="pb-1 text-slate-500 text-sm font-medium">
               starting from
             </span>
@@ -98,7 +98,7 @@ export default function PricingBlock() {
             <PricingListItem>Advanced analytics setup</PricingListItem>
           </ul>
           <DialogTrigger asChild className="w-fit">
-            <Button className="w-full rounded-lg" variant={'outline'}>
+            <Button className="w-full rounded-lg" variant={"outline"}>
               Contact
             </Button>
           </DialogTrigger>

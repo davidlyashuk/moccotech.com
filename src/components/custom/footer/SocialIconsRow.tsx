@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import React from 'react';
-import { SocialIcon } from 'react-social-icons';
+import Link from "next/link";
+import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 export default function SocialIconsRow() {
   return (
@@ -13,7 +13,7 @@ export default function SocialIconsRow() {
           network="linkedin"
           as="div"
           bgColor="#475569"
-          style={{ width: '2rem', height: '2rem' }}
+          style={{ width: "2rem", height: "2rem" }}
           className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
         />
       </Link>
@@ -26,7 +26,7 @@ export default function SocialIconsRow() {
           network="facebook"
           as="div"
           bgColor="#475569"
-          style={{ width: '2rem', height: '2rem' }}
+          style={{ width: "2rem", height: "2rem" }}
           className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
         />
       </Link>
@@ -36,7 +36,7 @@ export default function SocialIconsRow() {
           network="instagram"
           as="div"
           bgColor="#475569"
-          style={{ width: '2rem', height: '2rem' }}
+          style={{ width: "2rem", height: "2rem" }}
           className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
         />
       </Link>
@@ -46,12 +46,12 @@ export default function SocialIconsRow() {
           network="pinterest"
           as="div"
           bgColor="#475569"
-          style={{ width: '2rem', height: '2rem' }}
+          style={{ width: "2rem", height: "2rem" }}
           className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
         />
       </Link>
 
-      <Link href="https://github.com/Mocco-Tech" target="_blank">
+      {/* <Link href="https://github.com/Mocco-Tech" target="_blank">
         <SocialIcon
           network="github"
           as="div"
@@ -59,7 +59,7 @@ export default function SocialIconsRow() {
           style={{ width: '2rem', height: '2rem' }}
           className="hover:ring rounded-full bg-slate-600 ring-slate-600 duration-200"
         />
-      </Link>
+      </Link> */}
     </div>
   );
 }
